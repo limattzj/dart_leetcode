@@ -1,5 +1,5 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+# Dart Leetcode Solution
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+## Directory
+You can find all the solution inside lib/ folder, and all tests in tests/
+I used the package benchmark_harness to benchmark the code times.
