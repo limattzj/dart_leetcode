@@ -1,16 +1,21 @@
 class Solution {
   List<bool> kidsWithCandies(List<int> candies, int extraCandies) {
-    var i = 0;
+    // variable assignments
+    var index = 0;
     var length = candies.length;
     var result = List<bool>();
     var largest = findLargest(candies);
-    while (i < length) {
-      if (candies[i] + extraCandies >= largest) {
+
+    // while loop
+    while (index < length) {
+      var temp = candies[index] + extraCandies;
+      // if the i-th kid with extra candies > the kid with largest candy
+      if (temp >= largest) {
         result.add(true);
       } else {
         result.add(false);
       }
-      i++;
+      index++;
     }
     return result;
   }
